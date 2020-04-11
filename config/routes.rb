@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'welcome/index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  
+  # Declares it as a standard REST resource - i.e. sets routes of GET, POST, PUT PATCH DELETE to REST convention
   resources :articles
 
   root 'welcome#index'
